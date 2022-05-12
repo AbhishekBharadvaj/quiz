@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { QuestionComponent } from './question/question.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ChangeBgDirective } from './change-bg.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     QuestionComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ChangeBgDirective
   ],
   imports: [
     BrowserModule,
