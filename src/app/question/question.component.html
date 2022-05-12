@@ -32,7 +32,7 @@
             <ol *ngFor="let option of questionList[currentQuestion]?.options">
                 <li (click)="answer(currentQuestion+1,option)">
                     <div appChangeBg [isCorrect]="option.correct" class="card">
-                        {{option.Text}}
+                        {{option.text}}
                     </div>
                 </li>                   
             </ol>
@@ -49,9 +49,9 @@
             <img style="width: 50%;" class="img-fluid col-sm-12 mx-auto" src="https://icon-library.com/images/celebration-icon-png/celebration-icon-png-7.jpg" alt="">
             <div class="result text-center col-mod-6 col-sm-12">
                 <h3>Congratulations !! <br>You have completed the quiz. <br>Below is your result:</h3>
-                <p>Total Questions Attempted : {{questionList.length}}</p>
-                <p>Total Correct Answered : {{correctAnswer}}</p>
-                <p>Total Wrong Answered : {{inCorrectAnswer}}</p>
+                <p>Total Questions Attempted : {{questionList.length}} </p>
+                <p>Total Correct Answered : {{correctAnswer}} </p>
+                <p>Total Wrong Answered : {{inCorrectAnswer}} </p>
                 <p>Your Score : {{points}} Points</p>
             </div>
         </div>
